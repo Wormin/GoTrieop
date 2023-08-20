@@ -1,0 +1,205 @@
+.header {
+  position: relative;
+  background: url("/GoTrieop/images/Rectangle\ 3.png") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 120vh;
+  color: white;
+  margin-bottom: 200px;
+}
+.header__container {
+  display: flex;
+  min-height: 120px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 80px;
+}
+
+.menu__item {
+}
+
+.menu__link {
+  position: relative;
+  color: #fff;
+  font-size: 15px;
+}
+.menu__link:before {
+  content: "";
+  border-radius: 100px;
+  background: #c4c4c4;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  transform: scaleX(0);
+  transition: 0.4s all ease-in-out;
+}
+.menu__link:hover:before {
+  transform: scaleX(1);
+}
+.nav__buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav__login-btn {
+  padding: 15px 40px 15px 40px;
+  border-radius: 100px;
+  color: white;
+  background: linear-gradient(172deg, #ff7b4e 0%, #ff584e 100%), #fff;
+  transition: background 0.4s ease-in-out;
+}
+.nav__btn-signUp {
+  color: #fff;
+}
+@media (max-width: 800px) {
+  .menu__list {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .menu-burger {
+    display: flex;
+  }
+  .nav__buttons {
+    display: none;
+  }
+}
+
+/* Burger-menu Styles */
+
+.menu-btn {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 5000;
+  display: none;
+}
+.menu-btn span {
+  width: 25px;
+  height: 1.5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  transition: all 0.5s;
+}
+.menu-btn span:nth-of-type(2) {
+  top: calc(50% - 8px);
+}
+.menu-btn span:nth-of-type(3) {
+  top: calc(50% + 8px);
+}
+.menu-burger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 4999;
+  background-color: rgba(38, 80, 59, 255);
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+
+.nav-link {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  height: 100%; /* Ensure the nav-link takes full height of the parent li */
+  width: 100%; /* Ensure the nav-link takes full width of the parent li */
+}
+.menu-burger.active {
+  transform: translateX(0);
+}
+.menu-burger li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  height: 60px; /* Set a fixed height for each li */
+}
+/* Changing the burger icon when the menu is open */
+.menu-btn.active span:nth-of-type(1) {
+  background-color: #fff; /* Зміна кольору на чорний для всіх span в .menu-btn */
+  display: none;
+}
+.menu-btn.active span:nth-of-type(2) {
+  background-color: #fff; /* Зміна кольору на чорний для всіх span в .menu-btn */
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+}
+.menu-btn.active span:nth-of-type(3) {
+  background-color: #fff; /* Зміна кольору на чорний для всіх span в .menu-btn */
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+/* Adaptive */
+
+@media (max-width: 998.8px) {
+  .menu__list {
+    gap: 60px;
+  }
+}
+@media (max-width: 898.8px) {
+  .menu__list {
+    gap: 40px;
+  }
+}
+@media (max-width: 800px) {
+  .menu__list {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+  body.lock {
+    overflow: hidden;
+  }
+  .menu-burger {
+    display: flex;
+  }
+  .nav__buttons {
+    display: flex;
+    margin-left: 300px;
+  }
+}
+@media (max-width: 696.8px) {
+  .nav__buttons {
+    display: flex;
+    margin-left: 220px;
+    display: none;
+  }
+}
+@media (max-width: 1498.8px) {
+  .header {
+    height: 140vh;
+  }
+}

@@ -1,0 +1,141 @@
+.customers {
+}
+.customers__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 218px;
+}
+.customers__left-item {
+}
+.customers__image {
+}
+.customers__img {
+  max-width: 100%;
+  border-radius: 50px;
+}
+.customers__right-item {
+  padding-right: 88px;
+}
+.customers__title {
+  color: #0f1f1c;
+  font-size: 45px;
+  max-width: 565px;
+  font-weight: 500;
+  line-height: normal;
+}
+.customers__person {
+  display: flex;
+  align-items: center;
+  padding-top: 56px;
+}
+.customers__person__image {
+  align-items: center;
+}
+.customers__person-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+.customers__person-img {
+  display: flex;
+  width: 120px;
+  align-items: center;
+  border-radius: 100px;
+  background-color: rgb(236, 127, 77);
+}
+.customers__name {
+  color: #0f1f1c;
+  font-size: 33px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+.customers__location {
+  color: #0f1f1c;
+  font-size: 25px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+.customers__subtitle {
+  color: #0f1f1c;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: normal;
+  opacity: 0.5;
+  max-width: 491px;
+  padding-top: 37px;
+}
+.customers__stars {
+  padding-top: 30px;
+  gap: 8px;
+}
+
+/* Adaptive */
+
+@media (max-width: 1198.8px) {
+  .customers__right-item {
+    padding-right: 0px;
+    padding-left: 50px;
+  }
+}
+@media (max-width: 989.8px) {
+  .customers__title {
+    font-size: 35px;
+  }
+  .customers__name {
+    font-size: 30px;
+  }
+  .customers__location {
+    font-size: 25px;
+    white-space: nowrap;
+  }
+  .customers__subtitle {
+    font-size: 25px;
+  }
+  .customers__right-item {
+    padding-left: 30px;
+  }
+  .customers__person-img {
+    width: 100px;
+  }
+  .customers__img {
+    width: 600px;
+  }
+}
+@media (max-width: 689.8px) {
+  .customers__container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .customers__image {
+    padding-top: 80px;
+  }
+  .customers__img {
+    width: 300px;
+  }
+  .customers__stars {
+    text-align: center;
+  }
+  .customers__right-item {
+    padding-left: 0px;
+  }
+  .customers__stars-img {
+    width: 40px;
+    gap: 6px;
+  }
+  .customers__person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .customers__title {
+    text-align: center;
+  }
+  .customers__subtitle {
+    text-align: center;
+  }
+}
+
+

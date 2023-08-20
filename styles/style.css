@@ -1,0 +1,35 @@
+@import url(/GoTrieop/styles/reset.css);
+@import url(/GoTrieop/styles/header.css);
+@import url(/GoTrieop/styles/explore.css);
+@import url(/GoTrieop/styles/destinations.css);
+@import url(/GoTrieop/styles/customers.css);
+@import url(/GoTrieop/styles/yourself.css);
+@import url(/GoTrieop/styles/newsletter.css);
+@import url(/GoTrieop/styles/footer.css);
+
+body {
+  font-family: 'Poppins';
+}
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ------ */
+
+.page {
+  flex: 1 1 auto;
+}
+
+/* ------ */
+
+[class*="__container"] {
+  max-width: 1240px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+/* ------ */
