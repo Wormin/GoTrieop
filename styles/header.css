@@ -56,15 +56,16 @@
   transform: scaleX(1);
 }
 .nav__buttons {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+  display: inline-block;
 }
-
+.nav-link-1 {
+  background-color: red;
+}
 .nav__login-btn {
-  padding: 15px 40px 15px 40px;
+  padding: 15px 25px 15px 25px;
   border-radius: 100px;
   color: white;
+  margin-left: 20px;
   background: linear-gradient(172deg, #ff7b4e 0%, #ff584e 100%), #fff;
   transition: background 0.4s ease-in-out;
 }
@@ -191,19 +192,35 @@
     display: flex;
   }
   .nav__buttons {
-    display: flex;
+    display: block;
     margin-left: 300px;
   }
 }
 @media (max-width: 696.8px) {
   .nav__buttons {
-    display: flex;
-    margin-left: 220px;
-    display: none;
+    margin-left: 170px;
+    align-items: center;
   }
 }
 @media (max-width: 1498.8px) {
   .header {
     height: 140vh;
+  }
+}
+@media (max-width: 509.8px) {
+  .nav__buttons {
+    margin-left: 70px;
+    align-items: center;
+  }
+}
+@media (max-width: 413.8px) {
+  .nav__buttons {
+    margin-left: 10px;
+    align-items: center;
+  }
+}
+@media (max-width: 346.8px) {
+  .nav__buttons {
+    display: none;
   }
 }
