@@ -134,6 +134,10 @@
   font-size: 25px;
   height: 100%; /* Ensure the nav-link takes full height of the parent li */
   width: 100%; /* Ensure the nav-link takes full width of the parent li */
+  transition: .3s all ease-in-out;
+}
+.nav-link:hover {
+  transform: scale(1.2);
 }
 .menu-burger.active {
   transform: translateX(0);

@@ -10,15 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>GoTrip</title>
   </head>
   <body>
     <div class="wrapper">
       <div class="header">
-        <div class="header__container">
-          <div class="header__logo">
-            <img src="" alt="" />GoTrieop
-          </div>
+        <div  class="header__container">
+          <div class="header__logo"><img src="" alt="" />GoTrieop</div>
           <nav class="header__menu menu">
             <ul class="menu__list">
               <li class="menu__item">
@@ -57,8 +56,8 @@
             </nav>
           </div>
         </div>
-        <section class="explore">
-          <div class="expolore__container">
+        <section  class="explore">
+          <div data-aos="fade-up" data-aos-duration="2000" class="expolore__container">
             <div class="explore__left-item">
               <div class="explore__toptitle">explore the world</div>
               <div class="explore__title">
@@ -77,7 +76,7 @@
       </div>
       <main class="page">
         <section class="destinations">
-          <div class="destinations__container">
+          <div data-aos="fade-up" data-aos-duration="1000" class="destinations__container">
             <div class="destinations__left-item">
               <div class="destinations__toptitle">Choice Of</div>
               <div class="destinations__title">Destinations</div>
@@ -101,10 +100,14 @@
           </div>
         </section>
         <section class="customers">
-          <div class="customers__container">
+          <div data-aos="fade-up" data-aos-duration="1000" class="customers__container">
             <div class="customers__left-item">
               <div class="customers__image">
-                <img src="/GoTrieop/images/custome.jpg" alt="" class="customers__img" />
+                <img
+                  src="/GoTrieop/images/custome.jpg"
+                  alt=""
+                  class="customers__img"
+                />
               </div>
             </div>
             <div class="customers__right-item">
@@ -158,7 +161,7 @@
           </div>
         </section>
         <section class="yourself">
-          <div class="yourself__container">
+          <div data-aos="fade-up" data-aos-duration="1000" class="yourself__container">
             <div class="yourself__title">
               Prepare Yourself And Start Exploring With Us.
             </div>
@@ -171,7 +174,7 @@
           </div>
         </section>
         <section class="newsletter">
-          <div class="newsletter__container">
+          <div data-aos="fade-up" data-aos-duration="1000" class="newsletter__container">
             <div class="newsletter__title">Subscribe To Our Newsletter</div>
             <div class="newsletter__inputs">
               <input type="text" placeholder="Yourmail@mail.com" />
@@ -183,7 +186,7 @@
         </section>
       </main>
       <footer class="footer">
-        <div class="footer__container">
+        <div data-aos="fade-up" data-aos-duration="1000" class="footer__container">
           <div class="footer__logo">GoTrieop</div>
           <nav class="footer__menu menu">
             <ul class="footer__list">
@@ -209,5 +212,9 @@
       </footer>
     </div>
     <script src="/GoTrieop/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
